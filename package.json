@@ -24,7 +24,8 @@
   },
   "homepage": "https://github.com/phuoc153258/nodejs_todolist#readme",
   "dependencies": {
-    "express": "^4.17.3"
+    "express": "^4.17.3",
+    "express-handlebars": "^6.0.3"
   },
   "devDependencies": {
     "morgan": "^1.10.0",
