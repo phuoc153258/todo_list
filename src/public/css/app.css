@@ -1,0 +1,153 @@
+@import url("https://fonts.googleapis.com/css2?family=Yanone+Kaffeesatz:wght@500&display=swap");
+html {
+  box-sizing: border-box; }
+
+* {
+  margin: 0;
+  padding: 0; }
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box; }
+
+input,
+textarea,
+select,
+button {
+  outline: none; }
+
+input {
+  line-height: normal; }
+
+label,
+button {
+  cursor: pointer; }
+
+a {
+  text-decoration: none; }
+
+img {
+  display: block;
+  max-width: 100%; }
+
+.wrapper {
+  max-width: 1000px;
+  margin: 0 auto; }
+
+body {
+  background-color: #ffc1a2;
+  line-height: 1;
+  color: #494a4b;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  padding: 50px 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh; }
+
+.container {
+  max-width: 500px;
+  margin: 0 auto; }
+
+h3 {
+  padding: 10px 0px 20px 0px;
+  font-size: 23px; }
+
+.my-mr10 {
+  margin-right: 10px; }
+
+.my-ml5 {
+  margin-left: 5px; }
+
+.card {
+  background-color: #f2f2f2;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+  border-radius: 20px;
+  padding: 15px 0px;
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  margin: 0 auto;
+  min-width: 500px; }
+  .card-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 15px;
+    font-size: 20px; }
+  .card-img {
+    max-width: 100px;
+    margin: 0; }
+  .card-text {
+    background-color: #fe7345;
+    color: #f2f2f2;
+    padding: 7px 23px;
+    border-radius: 20% 5% 20% 5%/5% 20% 25% 20%;
+    -ms-transform: rotate(3deg);
+    /* IE 9 */
+    transform: rotate(3deg); }
+  .card-button {
+    width: 25%;
+    font-size: larger;
+    color: rgba(73, 74, 75, 0.45);
+    cursor: pointer;
+    border: none;
+    text-decoration: none;
+    display: inline-block; }
+  .card-button:hover {
+    color: #000;
+    opacity: 0.7; }
+  .card-footer {
+    padding-top: auto;
+    display: flex;
+    justify-content: center;
+    align-items: center; }
+  .card-icon {
+    max-width: 18px; }
+  .card-desc {
+    color: rgba(73, 74, 75, 0.45); }
+  .card-todo {
+    padding-bottom: 50px; }
+  .card-item {
+    padding: 4px 0px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    line-height: 1.3; }
+  .card-check {
+    display: flex; }
+    .card-check p {
+      font-size: 23px; }
+  .card-update {
+    display: flex; }
+  .card-form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 300px; }
+  .card-desc {
+    font-size: 20px;
+    padding-top: 5px;
+    color: #181818; }
+  .card-input {
+    width: 100%;
+    box-sizing: border-box;
+    border: 2px solid #ccc;
+    border-radius: 4px;
+    font-size: 18px;
+    background-color: white;
+    background-position: 10px 10px;
+    background-repeat: no-repeat;
+    padding: 8px 17px;
+    font-family: "Yanone Kaffeesatz", sans-serif; }
+  .card-checkbox {
+    display: inline-block;
+    margin: 8px 5px 0px 0px; }
+  .card-form {
+    margin-bottom: 15px; }
+
+.icon-update {
+  max-width: 15px; }
