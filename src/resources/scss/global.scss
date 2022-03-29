@@ -28,3 +28,25 @@ h3{
 .my-ml5{
     margin-left: 5px;
 }
+.mt-10{
+    margin-top: 10px;
+}
+.mr-3{
+    margin-right: 3px;
+}
+.input-todo{
+    padding-left: 5px;
+    width: 240px;
+    border-top: none;
+    border-left: none;
+    border-right: none;
+    border-bottom: 1px solid #000;
+    background-color: $white-color;
+    font-family: $font-primary;
+    font-size: 20px;
+    color: $text-color;
+}
+.fa-solid{
+    color: #000 !important;
+    font-size: 20px !important;
+}

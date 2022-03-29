@@ -4,6 +4,10 @@
         <p class='card-desc'>Congrat, you have no more tasks to do</p>
     </div>
     <div>
-        <p class='card-count'>1 item left</p>
+        <p class='card-count' id="count-item-todo"></p>
     </div>
 </div>
+<script>
+    let cardItem = document.querySelectorAll('.show-item-js')
+    document.getElementById('count-item-todo').innerHTML = cardItem.length + ' item left'
+</script>

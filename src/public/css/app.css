@@ -17,6 +17,9 @@ select,
 button {
   outline: none; }
 
+button {
+  border: none; }
+
 input {
   line-height: normal; }
 
@@ -60,6 +63,28 @@ h3 {
 .my-ml5 {
   margin-left: 5px; }
 
+.mt-10 {
+  margin-top: 10px; }
+
+.mr-3 {
+  margin-right: 3px; }
+
+.input-todo {
+  padding-left: 5px;
+  width: 240px;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  border-bottom: 1px solid #000;
+  background-color: #f2f2f2;
+  font-family: "Yanone Kaffeesatz", sans-serif;
+  font-size: 20px;
+  color: #494a4b; }
+
+.fa-solid {
+  color: #000 !important;
+  font-size: 20px !important; }
+
 .card {
   background-color: #f2f2f2;
   box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -89,6 +114,7 @@ h3 {
     /* IE 9 */
     transform: rotate(3deg); }
   .card-button {
+    font-family: "Yanone Kaffeesatz", sans-serif;
     width: 25%;
     font-size: larger;
     color: rgba(73, 74, 75, 0.45);
@@ -109,7 +135,7 @@ h3 {
   .card-desc {
     color: rgba(73, 74, 75, 0.45); }
   .card-todo {
-    padding-bottom: 50px; }
+    padding-bottom: 30px; }
   .card-item {
     padding: 4px 0px;
     display: flex;
@@ -119,7 +145,7 @@ h3 {
   .card-check {
     display: flex; }
     .card-check p {
-      font-size: 23px; }
+      font-size: 20px; }
   .card-update {
     display: flex; }
   .card-form {
@@ -145,7 +171,7 @@ h3 {
     font-family: "Yanone Kaffeesatz", sans-serif; }
   .card-checkbox {
     display: inline-block;
-    margin: 8px 5px 0px 0px; }
+    margin: 6px 5px 0px 0px; }
   .card-form {
     margin-bottom: 15px; }
 

@@ -29,6 +29,7 @@
         transform: rotate(3deg);
     }
     &-button{
+        font-family: $font-primary;
         width: 25% ;
         font-size: larger;
         color: $gray-color;
@@ -54,7 +55,7 @@
         color: $gray-color;
     }
     &-todo{
-        padding-bottom: 50px;
+        padding-bottom: 30px;
     }
     &-item{
         padding: 4px 0px;
@@ -66,7 +67,7 @@
     &-check{
         display: flex;
         p{
-            font-size: 23px;
+            font-size: 20px;
         }
     }
     &-update{
@@ -98,7 +99,7 @@
     }
     &-checkbox{
         display: inline-block;
-        margin: 8px 5px 0px 0px;
+        margin: 6px 5px 0px 0px;
     }
     &-form{
         margin-bottom: 15px;
