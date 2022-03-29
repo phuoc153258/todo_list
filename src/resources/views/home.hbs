@@ -1,10 +1,10 @@
 <div class="card-body">
     <h3>~ Today I need to ~</h3>
-            <form method="POST" action="/create" class='card-form'>
-                <input placeholder='Add new todo...' class='w-350 card-input' name="work">
-                <input type="checkbox" class="card-checkbox" style="display: none;"  name="abc" value="false" checked>
-                <button type="submit" class="card-button">Add</button>
-            </form>
+    <form method="POST" action="/create" class='card-form'>
+        <input placeholder='Add new todo...' class='w-350 card-input' name="work">
+        <input type="checkbox" class="card-checkbox" style="display: none;" name="abc" value="false" checked>
+        <button type="submit" class="card-button">Add</button>
+    </form>
 
     <div class='card-todo'>
         {{#each todos}}
@@ -12,23 +12,33 @@
             <div id="show-item-{{this._id}}" class="show-item-js">
                 <div class='card-item'>
                     <div class='card-check'>
-                        <input type="checkbox" class="card-checkbox" {{isChecked this.isCompleted}} value="{{this.isCompleted}}"></input>
+                        <input type="checkbox" class="card-checkbox" {{isChecked this.isCompleted}}
+                            value="{{this.isCompleted}}" disabled="disable"></input>
                         <p>{{this.work}}</p>
                     </div>
-                    <div class='card-update'>
+                        <form method="POST" action="delete/{{this._id}}?_method=DELETE" class='card-update'> 
                         <img src="/img/update(1).png" class='card-icon my-mr10'
                             onclick="UpdateItem('{{this._id}}')"></img>
-                        <img src="/img/delete.png" class='card-icon'></img>
-                    </div>
+
+                            <button type="submit">
+                                <img src="/img/delete.png" class='card-icon'></img>
+                            </button>
+                        </form>
+
                 </div>
             </div>
             <div id="hide-item-{{this._id}}" hidden>
                 <form class='card-item' method="POST" action="/update/{{this._id}}?_method=PUT">
-                    <input type="text" name="todo" class="input-todo" value="{{this.work}}">
-                    <input type="checkbox" name="isCompleted" class="card-checkbox" {{isChecked this.isCompleted}} value="{{this.isCompleted}}" style="display: none;"></input>
+                    <div>
+                        <input type="checkbox" name="isCompleted" class="card-checkbox" {{isChecked this.isCompleted}}
+                            value="true"></input>
+                        <input type="text" name="work" class="input-todo" value="{{this.work}}">
+                    </div>
+
                     <div class='card-update mr-3'>
                         <button type="submit"><i class="fa-solid fa-check my-mr10 mt-10"></i></button>
-                        <a href="#" onclick="CancelUpdateItem('{{this._id}}')"><i class="fa-solid fa-xmark mt-10"></i></a>
+                        <a href="#" onclick="CancelUpdateItem('{{this._id}}')"><i
+                                class="fa-solid fa-xmark mt-10"></i></a>
                     </div>
                 </form>
             </div>
@@ -41,7 +51,7 @@
         document.getElementById('show-item-' + id).setAttribute("hidden", true);
         document.getElementById('hide-item-' + id).removeAttribute("hidden");
     }
-    function CancelUpdateItem(id){
+    function CancelUpdateItem(id) {
         document.getElementById('hide-item-' + id).setAttribute("hidden", true);
         document.getElementById('show-item-' + id).removeAttribute("hidden");
     }

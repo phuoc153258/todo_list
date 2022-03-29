@@ -3,8 +3,8 @@ const Schema = mongoose.Schema;
 
 const Todo = new Schema(
     {
-        work: { type: String, required: true},
-        isCompleted: {type: Boolean , default: false}
+        work: { type: String, minlength: 1 },
+        isCompleted: { type: Boolean, default: false, },
     }
 );
 
